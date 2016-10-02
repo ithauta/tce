@@ -103,6 +103,7 @@ POP_CLANG_DIAGS
 #include "MachineInfo.hh"
 #include "DirectAccessMemory.hh"
 #include "IdealSRAM.hh"
+#include "IdealSRAM_DF.hh"
 #include "RemoteMemory.hh"
 #include "MemoryProxy.hh"
 #include "DisassemblyFUPort.hh"
@@ -1730,7 +1731,12 @@ SimulatorFrontend::initializeMemorySystem() {
              mem = MemorySystem::MemoryPtr(
                  new RemoteMemory( space ));
 
-            break;
+             break;
+	case SIM_DATAFLOW:
+	     mem = MemorySystem::MemoryPtr(
+		 new IdealSRAM_DF(
+		    space.start(), space.end(), space.width()));
+	     break;
         default:            
         throw Exception(
             __FILE__, __LINE__, __func__,
