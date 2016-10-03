@@ -32,12 +32,15 @@
  * @note rating: red
  */
 
+#include <string.h>
+
 #include <string>
 #include <utility>
 
 #include "IdealSRAM_DF.hh"
 #include "Conversion.hh"
 #include "Application.hh"
+//#include <iostream>
 
 using std::string;
 
@@ -55,7 +58,7 @@ using std::string;
  */
 IdealSRAM_DF::IdealSRAM_DF(Word start, Word end, Word MAUSize) :
     Memory(start, end, MAUSize), start_(start), end_(end), MAUSize_(MAUSize) {
-    data_ = new Memory::MAU[end_ - start_];
+    data_ = new Memory::MAU [end_ - start_];
 }
 
 
@@ -66,7 +69,7 @@ IdealSRAM_DF::IdealSRAM_DF(Word start, Word end, Word MAUSize) :
  * about pending access requests is freed, too.
  */
 IdealSRAM_DF::~IdealSRAM_DF() {
-    delete data_;
+    delete[] data_;
     data_ = NULL;
 }
 
@@ -80,6 +83,7 @@ IdealSRAM_DF::~IdealSRAM_DF() {
  */
 void
 IdealSRAM_DF::write(Word address, MAU data) {
+    //std::cout << "data write" << data << std::endl;
     data_[address - start_] = data;
 }
 
@@ -93,6 +97,7 @@ IdealSRAM_DF::write(Word address, MAU data) {
  */
 Memory::MAU
 IdealSRAM_DF::read(Word address) {
+    //std::cout << "data read " << data_[address - start_] << std::endl;
     return data_[address - start_];
 }
 
@@ -104,12 +109,12 @@ IdealSRAM_DF::read(Word address) {
  */
 void
 IdealSRAM_DF::fillWithZeros() {
-    data_ = {0};
+    memset(data_,0, sizeof(Memory::MAU )*(end_ - start_));
 }
 
 
 Memory::MAU *
 IdealSRAM_DF::getStoragePointer(){
-    return data_
+    return data_;
 }
 

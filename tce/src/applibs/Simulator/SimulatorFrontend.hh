@@ -102,7 +102,7 @@ public:
         SIM_COMPILED, ///< Compiled, faster simulation.
         SIM_REMOTE,   ///< Remote debugger, not a simulator at all
         SIM_CUSTOM,    ///< User-implemented remote HW debugger
-	SIM_DATAFLOW
+	    SIM_DATAFLOW
     } SimulationType;
 
     SimulatorFrontend(SimulationType backend = SIM_NORMAL);

@@ -26,7 +26,7 @@
  *
  * Implementation of SimulatorFrontend class
  *
- * @author Pekka Jääskeläinen 2005,2010-2012 (pjaaskel-no.spam-cs.tut.fi)
+ * @author Pekka Jï¿½ï¿½skelï¿½inen 2005,2010-2012 (pjaaskel-no.spam-cs.tut.fi)
  *
  * @note rating: red
  */
@@ -1730,13 +1730,12 @@ SimulatorFrontend::initializeMemorySystem() {
         case SIM_CUSTOM:
              mem = MemorySystem::MemoryPtr(
                  new RemoteMemory( space ));
-
              break;
-	case SIM_DATAFLOW:
-	     mem = MemorySystem::MemoryPtr(
-		 new IdealSRAM_DF(
-		    space.start(), space.end(), space.width()));
-	     break;
+	    case SIM_DATAFLOW:
+	         mem = MemorySystem::MemoryPtr(
+                 new IdealSRAM_DF(
+                    space.start(), space.end(), space.width()));
+             break;
         default:            
         throw Exception(
             __FILE__, __LINE__, __func__,

@@ -1,7 +1,7 @@
 
 noinst_LTLIBRARIES = libmemory.la
 libmemory_la_SOURCES = Memory.cc IdealSRAM.cc DirectAccessMemory.cc \
-                       WriteRequest.cc RemoteMemory.cc
+                       WriteRequest.cc RemoteMemory.cc IdealSRAM_DF.cc
 
 PROJECT_ROOT = $(top_srcdir)
 DOXYGEN_CONFIG_FILE = ${PROJECT_ROOT}/tools/Doxygen/doxygen.config
@@ -28,5 +28,6 @@ libmemory_la_SOURCES += \
 	Memory.hh DirectAccessMemory.hh \
 	IdealSRAM.hh MemoryContents.hh \
 	WriteRequest.hh Memory.icc \
-	TargetMemory.icc RemoteMemory.hh
+	TargetMemory.icc RemoteMemory.hh \
+	IdealSRAM_DF.hh
 ## headers end

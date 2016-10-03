@@ -40,6 +40,7 @@ libsimulator_la_SOURCES = WritableState.cc ReadableState.cc StateData.cc \
 	CompiledSimMove.cc CompiledSimInterpreter.cc CompiledSimSettingCommand.cc \
 	CompiledSimulationPimpl.cc FSAFUResourceConflictDetectorPimpl.cc \
 	OperationIDIndex.cc CompiledSimUtilizationStats.cc \
+	DataflowSimulatorFrontend.cc\
 	SimpleSimulatorFrontend.cc ExecutingOperation.cc SimulatorCLI.cc \
 	SimulatorCmdLineOptions.cc \
 	RemoteController.cc CustomDBGController.cc TCEDBGController.cc
@@ -53,7 +54,8 @@ include_HEADERS = \
 
 # Headers required by the SystemC wrapper.
 include_HEADERS += SimpleSimulatorFrontend.hh DetailedOperationSimulator.hh \
-	ExecutingOperation.hh SimulationEventHandler.hh
+	ExecutingOperation.hh SimulationEventHandler.hh \
+	DataflowSimulatorFrontend.hh
 
 PROJECT_ROOT = $(top_srcdir)
 SRC_ROOT_DIR = ${PROJECT_ROOT}/src
@@ -166,5 +168,7 @@ libsimulator_la_SOURCES += \
 	SettingCommand.icc CompiledSimulation.icc \
 	GCUState.icc DCMFUResourceConflictDetector.icc \
 	ExecutableInstruction.icc MachineState.icc \
-	AssignmentQueue.icc 
+	AssignmentQueue.icc \
+	DataflowSimulatorFrontend.hh
+
 ## headers end

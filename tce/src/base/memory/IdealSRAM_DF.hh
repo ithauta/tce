@@ -76,7 +76,7 @@ private:
     Word end_;
     /// Size of the minimum adressable unit.
     Word MAUSize_;
-    /// Container for holding read/write requests.
+    /// Container for data
     Memory::MAU * data_;
 };
 
