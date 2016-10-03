@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/DataflowSimulatorFrontend.cc" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/DataflowSimulatorFrontend.hh" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/MemorySystem.cc" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/MemorySystem.hh" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/SimpleSimulatorFrontend.cc" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/SimpleSimulatorFrontend.hh" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/SimulatorFrontend.hh" charset="ISO-8859-1" />
