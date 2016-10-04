@@ -26,7 +26,7 @@
  *
  * Declaration of the base interface for the memory model (Memory class).
  *
- * @author Pekka Jääskeläinen 2004 (pekka.jaaskelainen-no.spam-tut.fi)
+ * @author Pekka Jï¿½ï¿½skelï¿½inen 2004 (pekka.jaaskelainen-no.spam-tut.fi)
  * @note This file is used in compiled simulation. Keep dependencies *clean*
  * @note rating: red
  */
@@ -90,6 +90,9 @@ public:
     virtual void read(Word address, int size, UIntWord& data);
     virtual void read(Word address, FloatWord& data);
     virtual void read(Word address, DoubleWord& data);
+
+    virtual Memory::MAU * getStoragePointer(){ return 0;};
+    virtual void setStorageAddress(Memory::MAU * storagePointer){};
 
     virtual void reset();
     virtual void fillWithZeros();

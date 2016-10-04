@@ -26,7 +26,7 @@
  *
  * Non-inline definitions of Memory class.
  *
- * @author Pekka Jääskeläinen 2004 (pekka.jaaskelainen-no.spam-tut.fi)
+ * @author Pekka Jï¿½ï¿½skelï¿½inen 2004 (pekka.jaaskelainen-no.spam-tut.fi)
  * @note rating: red
  */
 
@@ -108,6 +108,14 @@ Memory::MAU
 Memory::read(Word /*address*/) {
     return 0;
 }
+
+Memory::MAU * getStoragePointer(){
+    return 0;
+};
+
+void setStorageAddress(Memory::MAU * storagePointer){
+
+};
 
 /**
  * A convenience method for writing units of data to the memory.

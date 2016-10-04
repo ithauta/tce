@@ -11,7 +11,7 @@ AM_CPPFLAGS = -I${PROJECT_ROOT}/src/tools \
               -I${PROJECT_ROOT}/src/base/mach
 AM_CXXFLAGS = -UNDEBUG
 
-include_HEADERS = Memory.hh Memory.icc WriteRequest.hh DirectAccessMemory.hh
+include_HEADERS = Memory.hh Memory.icc IdealSRAM_DF.hh WriteRequest.hh DirectAccessMemory.hh
 
 dist-hook:
 	rm -rf $(distdir)/CVS $(distdir)/.deps $(distdir)/Makefile
