@@ -109,13 +109,7 @@ Memory::read(Word /*address*/) {
     return 0;
 }
 
-Memory::MAU * getStoragePointer(){
-    return 0;
-};
 
-void setStorageAddress(Memory::MAU * storagePointer){
-
-};
 
 /**
  * A convenience method for writing units of data to the memory.

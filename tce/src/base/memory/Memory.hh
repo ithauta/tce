@@ -91,8 +91,8 @@ public:
     virtual void read(Word address, FloatWord& data);
     virtual void read(Word address, DoubleWord& data);
 
-    virtual Memory::MAU * getStoragePointer(){ return 0;};
-    virtual void setStorageAddress(Memory::MAU * storagePointer){};
+    virtual Memory::MAU * getStoragePointer(){ return 0;}
+    //virtual void setStorageAddress(Memory::MAU * storagePointer){;}
 
     virtual void reset();
     virtual void fillWithZeros();

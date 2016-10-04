@@ -118,8 +118,8 @@ IdealSRAM_DF::getStoragePointer(){
     return data_;
 }
 
-void
-IdealSRAM_DF::setStorageAddress(Memory::MAU * storagePointer){
-    delete[] data_;
-    data_ = storagePointer;
-}
+//void
+//IdealSRAM_DF::setStorageAddress(Memory::MAU * storagePointer){
+//    delete[] data_;
+//    data_ = storagePointer;
+//}
