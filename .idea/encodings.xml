@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/SimpleSimulatorFrontend.cc" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/SimpleSimulatorFrontend.hh" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/applibs/Simulator/SimulatorFrontend.hh" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/tce/src/base/memory/IdealSRAM.hh" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/tce/src/base/memory/IdealSRAM_DF.hh" charset="ISO-8859-1" />
   </component>
 </project>

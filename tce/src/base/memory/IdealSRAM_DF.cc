@@ -40,7 +40,7 @@
 #include "IdealSRAM_DF.hh"
 #include "Conversion.hh"
 #include "Application.hh"
-//#include <iostream>
+#include <iostream>
 
 using std::string;
 
@@ -58,6 +58,8 @@ using std::string;
  */
 IdealSRAM_DF::IdealSRAM_DF(Word start, Word end, Word MAUSize) :
     Memory(start, end, MAUSize), start_(start), end_(end), MAUSize_(MAUSize) {
+    std::cout << "start: " << start_ << std::endl;
+    std::cout << "end: " << end_ << std::endl;
     data_ = new Memory::MAU [end_ - start_];
 }
 

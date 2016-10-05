@@ -78,7 +78,7 @@ private:
     /// Size of the minimum adressable unit.
     Word MAUSize_;
     /// Container for data
-    Memory::MAU * data_;
+    Memory::MAU* data_;
 };
 
 #endif
