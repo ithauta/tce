@@ -94,6 +94,9 @@ public:
     virtual Memory::MAU * getStoragePointer(){ return 0;}
     //virtual void setStorageAddress(Memory::MAU * storagePointer){;}
 
+    virtual void enableLittleEndian(){ littleEndianByteOrder_ = true; }
+    virtual void disableLittleEndian(){ littleEndianByteOrder_ = false;}
+
     virtual void reset();
     virtual void fillWithZeros();
 
@@ -125,6 +128,8 @@ private:
     RequestQueue* writeRequests_;
     /// Mask bit pattern for unpacking IntWord to MAUs.
     int mask_;
+
+    bool littleEndianByteOrder_ = false;
 
 };
 

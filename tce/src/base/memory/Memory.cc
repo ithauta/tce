@@ -168,11 +168,22 @@ Memory::read(Word address, FloatWord& data) {
         UIntWord data;
         read(address + i, 1, data);
         // Byte order must be reversed if host is not bigendian.
+
+        /*
         #if WORDS_BIGENDIAN == 1
         cast.maus[i] = data;
         #else
         cast.maus[MAUS - 1 - i] = data;
-        #endif        
+        #endif
+        */
+
+        if (littleEndianByteOrder_ == false){
+            cast.maus[i] = data;
+        }
+        else{
+            cast.maus[MAUS - 1 - i] = data;
+        }
+
     }
     data = cast.d;
 }
@@ -212,11 +223,22 @@ Memory::write(Word address, FloatWord data) {
     for (std::size_t i = 0; i < MAUS; ++i) {
         UIntWord data;
         // Byte order must be reversed if host is not bigendian.
+
+        /*
         #if WORDS_BIGENDIAN == 1
         data = cast.maus[i];
         #else
         data = cast.maus[MAUS - 1 - i];
         #endif
+        */
+
+        if (littleEndianByteOrder_ == false){
+            cast.maus[i] = data;
+        }
+        else{
+            cast.maus[MAUS - 1 - i] = data;
+        }
+
         request->data_[i] = data;
     }
     writeRequests_->push_back(request);
@@ -251,11 +273,20 @@ Memory::read(Word address, DoubleWord& data) {
         UIntWord data;
         read(address + i, 1, data);
         // Byte order must be reversed if host is not bigendian.
+        /*
         #if WORDS_BIGENDIAN == 1
         cast.maus[i] = data;
         #else
         cast.maus[MAUS - 1 - i] = data;
-        #endif        
+        #endif
+        */
+
+        if (littleEndianByteOrder_ == false){
+            cast.maus[i] = data;
+        }
+        else{
+            cast.maus[MAUS - 1 - i] = data;
+        }
     }
     data = cast.d;
 }
@@ -295,11 +326,19 @@ Memory::write(Word address, DoubleWord data) {
     for (std::size_t i = 0; i < MAUS; ++i) {
         UIntWord data;
         // Byte order must be reversed if host is not bigendian.
+        /*
         #if WORDS_BIGENDIAN == 1
         data = cast.maus[i];
         #else
         data = cast.maus[MAUS - 1 - i];
         #endif
+         */
+        if (littleEndianByteOrder_ == false){
+            cast.maus[i] = data;
+        }
+        else{
+            cast.maus[MAUS - 1 - i] = data;
+        }
         request->data_[i] = data;
     }
     writeRequests_->push_back(request);
