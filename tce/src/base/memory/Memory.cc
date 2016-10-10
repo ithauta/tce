@@ -126,15 +126,30 @@ Memory::write(Word address, int count, UIntWord data) {
 
     checkRange(address, count);
 
-    Memory::MAU MAUData[MAX_ACCESS_SIZE];
-    unpack(data, count, MAUData);
+    if(littleEndianByteOrder_){
+        Memory::MAU MAUData[MAX_ACCESS_SIZE];
+        unpack(data, count, MAUData);
 
-    WriteRequest* request = new WriteRequest();
-    request->data_ = new MAU[count];
-    std::memcpy(request->data_, MAUData, count*sizeof(MAU));
-    request->size_ = count;
-    request->address_ = address;
-    writeRequests_->push_back(request);
+        WriteRequest* request = new WriteRequest();
+        request->data_ = new MAU[count];
+        std::memcpy(request->data_, MAUData, count*sizeof(MAU));
+        request->size_ = count;
+        request->address_ = address>>addrShift_;
+        writeRequests_->push_back(request);
+    }
+    else{
+        Memory::MAU MAUData[MAX_ACCESS_SIZE];
+        unpack(data, count, MAUData);
+
+        WriteRequest* request = new WriteRequest();
+        request->data_ = new MAU[count];
+        std::memcpy(request->data_, MAUData, count*sizeof(MAU));
+        request->size_ = count;
+        request->address_ = address>>addrShift_;
+        writeRequests_->push_back(request);
+    }
+
+
 }
 
 /**
@@ -166,7 +181,7 @@ Memory::read(Word address, FloatWord& data) {
 
     for (std::size_t i = 0; i < MAUS; ++i) {
         UIntWord data;
-        read(address + i, 1, data);
+        read((address>>addrShift_) + i, 1, data);
         // Byte order must be reversed if host is not bigendian.
 
         /*
@@ -218,7 +233,7 @@ Memory::write(Word address, FloatWord data) {
     WriteRequest* request = new WriteRequest();
     request->data_ = new MAU[MAUS];
     request->size_ = MAUS;
-    request->address_ = address;
+    request->address_ = address>>addrShift_;
 
     for (std::size_t i = 0; i < MAUS; ++i) {
         UIntWord data;
@@ -271,7 +286,7 @@ Memory::read(Word address, DoubleWord& data) {
 
     for (std::size_t i = 0; i < MAUS; ++i) {
         UIntWord data;
-        read(address + i, 1, data);
+        read((address>>addrShift_) + i, 1, data);
         // Byte order must be reversed if host is not bigendian.
         /*
         #if WORDS_BIGENDIAN == 1
@@ -321,7 +336,7 @@ Memory::write(Word address, DoubleWord data) {
     WriteRequest* request = new WriteRequest();
     request->data_ = new MAU[MAUS];
     request->size_ = MAUS;
-    request->address_ = address;
+    request->address_ = address>>addrShift_;
 
     for (std::size_t i = 0; i < MAUS; ++i) {
         UIntWord data;
@@ -359,12 +374,23 @@ Memory::read(Word address, int size, UIntWord& data) {
 
     checkRange(address, size);
 
-    data = 0;
-    int shiftCount = MAUSize_ * (size - 1);
-    for (int i = 0; i < size; i++) {
-        data = data | (read(address + i) << shiftCount);
-        shiftCount -= MAUSize_;
+    if(littleEndianByteOrder_ == true){
+        data = 0;
+        int shiftCount = MAUSize_ * (size - 1);
+        for (int i = 0; i < size; i++) {
+            data = data | (read((address>>addrShift_) - i) << shiftCount);
+            shiftCount -= MAUSize_;
+        }
     }
+    else{
+        data = 0;
+        int shiftCount = MAUSize_ * (size - 1);
+        for (int i = 0; i < size; i++) {
+            data = data | (read((address>>addrShift_) + i) << shiftCount);
+            shiftCount -= MAUSize_;
+        }
+    }
+
 }
 
 /**
@@ -430,15 +456,23 @@ Memory::pack(const Memory::MAUTable data, int size, UIntWord& value) {
  * @param data The target of unpacking.
  */
 void
-Memory::unpack(
-    const UIntWord& value,
-    int size,
-    Memory::MAUTable data) {
-    int shiftCount = MAUSize_ * (size - 1);
-    for(int i = 0; i < size; ++i) {
-        data[i] = ((value >> shiftCount) & mask_);
-        shiftCount -= MAUSize_;
+Memory::unpack( const UIntWord& value, int size, Memory::MAUTable data) {
+
+    if(littleEndianByteOrder_){
+        int shiftCount = MAUSize_ * (size - 1);
+        for(int i = 0; i < size; ++i) {
+            data[size-1-i] = ((value >> shiftCount) & mask_);
+            shiftCount -= MAUSize_;
+        }
     }
+    else{
+        int shiftCount = MAUSize_ * (size - 1);
+        for(int i = 0; i < size; ++i) {
+            data[i] = ((value >> shiftCount) & mask_);
+            shiftCount -= MAUSize_;
+        }
+    }
+
 }
 
 /**
