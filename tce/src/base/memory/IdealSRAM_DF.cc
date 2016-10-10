@@ -60,7 +60,7 @@ IdealSRAM_DF::IdealSRAM_DF(Word start, Word end, Word MAUSize) :
     Memory(start, end, MAUSize), start_(start), end_(end), MAUSize_(MAUSize) {
     std::cout << "start: " << start_ << std::endl;
     std::cout << "end: " << end_ << std::endl;
-    data_ = new Memory::MAU [end_ - start_];
+    data_ = new Memory::MAU [end_/4 - start_];
 }
 
 
@@ -86,7 +86,20 @@ IdealSRAM_DF::~IdealSRAM_DF() {
 void
 IdealSRAM_DF::write(Word address, MAU data) {
     //std::cout << "data write" << data << std::endl;
-    data_[address - start_] = data;
+    if(littleEndianByteOrder_){
+        unsigned int byteshift = (address & 0x00000003);
+        unsigned char *data_p = (unsigned char *) (&data_[(address>>2) - start_]);
+        data_p += (3-byteshift);
+        *(data_p) = (unsigned char) (data & 0x000000ff);
+    }
+    else{
+        unsigned char *data_p = (unsigned char *) (&data_[(address>>2) - start_]);
+        data_p += (address & 0x00000003);
+        *(data_p) = (unsigned char) (data & 0x000000ff);
+    }
+
+
+
 }
 
 /**
@@ -100,7 +113,23 @@ IdealSRAM_DF::write(Word address, MAU data) {
 Memory::MAU
 IdealSRAM_DF::read(Word address) {
     //std::cout << "data read " << data_[address - start_] << std::endl;
-    return data_[address - start_];
+
+    if(littleEndianByteOrder_){
+
+        unsigned int byteshift = (address & 0x00000003);
+        unsigned char *data_p = (unsigned char *)(&data_[(address>>2) - start_]);
+        data_p += (3-byteshift);
+
+        return (Memory::MAU) (*data_p);
+
+    }
+    else{
+        unsigned char *data_p = (unsigned char *)(&data_[(address>>2) - start_]);
+        data_p += (address & 0x00000003);
+
+        return (Memory::MAU) (*data_p);
+    }
+
 }
 
 /**
