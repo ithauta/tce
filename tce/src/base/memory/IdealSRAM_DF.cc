@@ -22,25 +22,22 @@
     DEALINGS IN THE SOFTWARE.
  */
 /**
- * @file IdealSRAM_DF.cc
+ * @file IdealSRAM.cc
  *
- * Definition of IdealSRAM_DF class.
+ * Definition of IdealSRAM class.
  *
  * @author Jussi Nykänen 2004 (nykanen-no.spam-cs.tut.fi)
  * @author Pekka Jääskeläinen 2005 (pjaaskel-no.spam-cs.tut.fi)
- * @author Ilkka Hautala 2016 (ithauta-no.spam-ee-oulu.fi)
  * @note rating: red
  */
-
-#include <string.h>
 
 #include <string>
 #include <utility>
 
-#include "IdealSRAM_DF.hh"
+#include "IdealSRAM.hh"
+#include "MemoryContents.hh"
 #include "Conversion.hh"
 #include "Application.hh"
-#include <iostream>
 
 using std::string;
 
@@ -56,11 +53,9 @@ using std::string;
  * @param wordSize Number of MAUs that make up a natural word.
  * @param align Alignment of natural words, expressed in number of MAUs.
  */
-IdealSRAM_DF::IdealSRAM_DF(Word start, Word end, Word MAUSize) :
-    Memory(start, end, MAUSize), start_(start), end_(end), MAUSize_(MAUSize) {
-    std::cout << "start: " << start_ << std::endl;
-    std::cout << "end: " << end_ << std::endl;
-    data_ = new Memory::MAU [end_/4 - start_];
+IdealSRAM::IdealSRAM(Word start, Word end, Word MAUSize) :
+        Memory(start, end, MAUSize), start_(start), end_(end), MAUSize_(MAUSize) {
+    data_ = new MemoryContents(end_ - start_);
 }
 
 
@@ -70,8 +65,8 @@ IdealSRAM_DF::IdealSRAM_DF(Word start, Word end, Word MAUSize) :
  * The storage reserved for the memory contents is deallocated. Any data
  * about pending access requests is freed, too.
  */
-IdealSRAM_DF::~IdealSRAM_DF() {
-    delete[] data_;
+IdealSRAM::~IdealSRAM() {
+    delete data_;
     data_ = NULL;
 }
 
@@ -84,22 +79,8 @@ IdealSRAM_DF::~IdealSRAM_DF() {
  * @param data The data to write.
  */
 void
-IdealSRAM_DF::write(Word address, MAU data) {
-    //std::cout << "data write" << data << std::endl;
-    if(littleEndianByteOrder_){
-        unsigned int byteshift = (address & 0x00000003);
-        unsigned char *data_p = (unsigned char *) (&data_[(address>>2) - start_]);
-        data_p += (3-byteshift);
-        *(data_p) = (unsigned char) (data & 0x000000ff);
-    }
-    else{
-        unsigned char *data_p = (unsigned char *) (&data_[(address>>2) - start_]);
-        data_p += (address & 0x00000003);
-        *(data_p) = (unsigned char) (data & 0x000000ff);
-    }
-
-
-
+IdealSRAM::write(Word address, MAU data) {
+    data_->writeData(address - start_, data);
 }
 
 /**
@@ -111,25 +92,8 @@ IdealSRAM_DF::write(Word address, MAU data) {
  * @return The data read.
  */
 Memory::MAU
-IdealSRAM_DF::read(Word address) {
-    //std::cout << "data read " << data_[address - start_] << std::endl;
-
-    if(littleEndianByteOrder_){
-
-        unsigned int byteshift = (address & 0x00000003);
-        unsigned char *data_p = (unsigned char *)(&data_[(address>>2) - start_]);
-        data_p += (3-byteshift);
-
-        return (Memory::MAU) (*data_p);
-
-    }
-    else{
-        unsigned char *data_p = (unsigned char *)(&data_[(address>>2) - start_]);
-        data_p += (address & 0x00000003);
-
-        return (Memory::MAU) (*data_p);
-    }
-
+IdealSRAM::read(Word address) {
+    return data_->readData(address - start_);
 }
 
 /**
@@ -139,18 +103,8 @@ IdealSRAM_DF::read(Word address) {
  * uninitialized data to be zero.
  */
 void
-IdealSRAM_DF::fillWithZeros() {
-    memset(data_,0, sizeof(Memory::MAU )*(end_ - start_));
+IdealSRAM::fillWithZeros() {
+    data_->clear();
 }
 
 
-Memory::MAU *
-IdealSRAM_DF::getStoragePointer(){
-    return data_;
-}
-
-//void
-//IdealSRAM_DF::setStorageAddress(Memory::MAU * storagePointer){
-//    delete[] data_;
-//    data_ = storagePointer;
-//}

@@ -53,12 +53,12 @@
  * @param end Last address of the memory.
  * @param MAUSize Bit width of the minimum addressable unit of the memory.
  */
-Memory::Memory(Word start, Word end, Word MAUSize) : 
-    start_(start), end_(end), MAUSize_(MAUSize),
-    writeRequests_(new RequestQueue()) {
+Memory::Memory(Word start, Word end, Word MAUSize) :
+        start_(start), end_(end), MAUSize_(MAUSize),
+        writeRequests_(new RequestQueue()) {
 
     const std::size_t maxMAUSize =
-        static_cast<int>(sizeof(MinimumAddressableUnit) * BYTE_BITWIDTH);
+            static_cast<int>(sizeof(MinimumAddressableUnit) * BYTE_BITWIDTH);
 
     if (MAUSize_ == maxMAUSize) {
         mask_ = ~0;
@@ -153,7 +153,7 @@ Memory::write(Word address, int count, UIntWord data) {
 void
 Memory::read(Word address, FloatWord& data) {
 
-    assert(MAUSize() == sizeof(Byte)*8 && 
+    assert(MAUSize() == sizeof(Byte)*8 &&
            "Loading FloatWords works only with byte sized MAU at the moment.");
 
     const std::size_t MAUS = 4;
@@ -173,11 +173,11 @@ Memory::read(Word address, FloatWord& data) {
         // Byte order must be reversed if host is not bigendian.
 
 
-        #if WORDS_BIGENDIAN == 1
+#if WORDS_BIGENDIAN == 1
         cast.maus[i] = data;
-        #else
+#else
         cast.maus[MAUS - 1 - i] = data;
-        #endif
+#endif
 
 
 
@@ -198,7 +198,7 @@ Memory::read(Word address, FloatWord& data) {
 void
 Memory::write(Word address, FloatWord data) {
 
-    assert(MAUSize() == sizeof(Byte)*8 && 
+    assert(MAUSize() == sizeof(Byte)*8 &&
            "Writing FloatWords works only with byte sized MAU at the moment.");
 
     const std::size_t MAUS = 4;
@@ -223,11 +223,11 @@ Memory::write(Word address, FloatWord data) {
         // Byte order must be reversed if host is not bigendian.
 
 
-        #if WORDS_BIGENDIAN == 1
+#if WORDS_BIGENDIAN == 1
         data = cast.maus[i];
-        #else
+#else
         data = cast.maus[MAUS - 1 - i];
-        #endif
+#endif
 
 
 
@@ -251,7 +251,7 @@ Memory::write(Word address, FloatWord data) {
 void
 Memory::read(Word address, DoubleWord& data) {
 
-    assert(MAUSize() == sizeof(Byte)*8 && 
+    assert(MAUSize() == sizeof(Byte)*8 &&
            "LDD works only with byte sized MAU at the moment.");
 
     const std::size_t MAUS = 8;
@@ -267,11 +267,11 @@ Memory::read(Word address, DoubleWord& data) {
         read((address) + i, 1, data);
         // Byte order must be reversed if host is not bigendian.
 
-        #if WORDS_BIGENDIAN == 1
+#if WORDS_BIGENDIAN == 1
         cast.maus[i] = data;
-        #else
+#else
         cast.maus[MAUS - 1 - i] = data;
-        #endif
+#endif
 
 
     }
@@ -290,7 +290,7 @@ Memory::read(Word address, DoubleWord& data) {
 void
 Memory::write(Word address, DoubleWord data) {
 
-    assert(MAUSize() == sizeof(Byte)*8 && 
+    assert(MAUSize() == sizeof(Byte)*8 &&
            "LDD works only with byte sized MAU at the moment.");
 
     const std::size_t MAUS = 8;
@@ -314,11 +314,11 @@ Memory::write(Word address, DoubleWord data) {
         UIntWord data;
         // Byte order must be reversed if host is not bigendian.
 
-        #if WORDS_BIGENDIAN == 1
+#if WORDS_BIGENDIAN == 1
         data = cast.maus[i];
-        #else
+#else
         data = cast.maus[MAUS - 1 - i];
-        #endif
+#endif
 
 
         request->data_[i] = data;
@@ -341,13 +341,43 @@ Memory::read(Word address, int size, UIntWord& data) {
 
     checkRange(address, size);
 
+    if(littleEndianByteOrder_){
+        if(size == 1){
+            assert(0 && "this reading size 1 is not supported");
+        }
+        else if(size == 2){
+            data = 0;
+            int shiftCount = MAUSize_ * (size - 1);
+            for (int i = 0; i < size; i++) {
+                data = data | (read((address+size-1) - i) << shiftCount);
+                shiftCount -= MAUSize_;
+            }
+        }
+        else if(size == 4){
 
-    data = 0;
-    int shiftCount = MAUSize_ * (size - 1);
-    for (int i = 0; i < size; i++) {
-        data = data | (read((address) + i) << shiftCount);
-        shiftCount -= MAUSize_;
+            data = 0;
+            int shiftCount = MAUSize_ * (size - 1);
+            for (int i = 0; i < size; i++) {
+                data = data | (read((address+size-1) - i) << shiftCount);
+                shiftCount -= MAUSize_;
+            }
+        }
+        else{
+            assert(0 && "this reading size is not supported");
+        }
+
+
     }
+    else{
+        data = 0;
+        int shiftCount = MAUSize_ * (size - 1);
+        for (int i = 0; i < size; i++) {
+            data = data | (read((address) + i) << shiftCount);
+            shiftCount -= MAUSize_;
+        }
+
+    }
+
 
 
 }
@@ -418,11 +448,19 @@ void
 Memory::unpack( const UIntWord& value, int size, Memory::MAUTable data) {
 
 
-
-    int shiftCount = MAUSize_ * (size - 1);
-    for(int i = 0; i < size; ++i) {
-        data[i] = ((value >> shiftCount) & mask_);
-        shiftCount -= MAUSize_;
+    if(littleEndianByteOrder_){
+        int shiftCount = MAUSize_ * (size - 1);
+        for(int i = 0; i < size; ++i) {
+            data[size-1-i] = ((value >> shiftCount) & mask_);
+            shiftCount -= MAUSize_;
+        }
+    }
+    else{
+        int shiftCount = MAUSize_ * (size - 1);
+        for(int i = 0; i < size; ++i) {
+            data[i] = ((value >> shiftCount) & mask_);
+            shiftCount -= MAUSize_;
+        }
     }
 
 
@@ -463,14 +501,14 @@ Memory::advanceClock() {
 void
 Memory::checkRange(Word startAddress, int numberOfMAUs) {
 
-    unsigned int low = start(); 
-    unsigned int high = end(); 
+    unsigned int low = start();
+    unsigned int high = end();
 
     if ((startAddress < low) || (startAddress > high - numberOfMAUs + 1)) {
         throw OutOfRange(
-            __FILE__, __LINE__, __func__,
-            (boost::format(
-                "Memory access at %d of size %d is out of the address space.")
-             % startAddress % numberOfMAUs).str());
+                __FILE__, __LINE__, __func__,
+                (boost::format(
+                        "Memory access at %d of size %d is out of the address space.")
+                 % startAddress % numberOfMAUs).str());
     }
 }
