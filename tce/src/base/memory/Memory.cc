@@ -343,7 +343,12 @@ Memory::read(Word address, int size, UIntWord& data) {
 
     if(littleEndianByteOrder_){
         if(size == 1){
-            assert(0 && "this reading size 1 is not supported");
+            data = 0;
+            int shiftCount = MAUSize_ * (size - 1);
+            for (int i = 0; i < size; i++) {
+                data = data | (read((address+size-1) - i) << shiftCount);
+                shiftCount -= MAUSize_;
+            }
         }
         else if(size == 2){
             data = 0;
