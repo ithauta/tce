@@ -359,7 +359,6 @@ Memory::read(Word address, int size, UIntWord& data) {
             }
         }
         else if(size == 4){
-
             data = 0;
             int shiftCount = MAUSize_ * (size - 1);
             for (int i = 0; i < size; i++) {
