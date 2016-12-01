@@ -100,8 +100,7 @@ public:
     virtual void reset();
     virtual void fillWithZeros();
 
-    bool littleEndianByteOrder_ = false;
-    int addrShift_ = 0;
+
 
     virtual Word start() { return start_; }
     virtual Word end() { return end_; }
@@ -132,7 +131,8 @@ private:
     /// Mask bit pattern for unpacking IntWord to MAUs.
     int mask_;
 
-
+    bool littleEndianByteOrder_;
+    int addrShift_;
 
 };
 

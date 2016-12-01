@@ -82,6 +82,7 @@ public:
         throw (InstanceNotFound);
 
     void shareMemoriesWith(MemorySystem& other);
+    void shareMemoryWith(MemorySystem& other, const std::string& asname);
 
     void advanceClockOfLocalMemories();
     void advanceClockOfSharedMemories();

@@ -143,28 +143,57 @@ MemorySystem::shareMemoriesWith(MemorySystem& other) {
         /// remove the replaced memory as it should not be controlled
         /// by this MemorySystem anymore
         
-        printf("DEBUG1\n");
-        if( *(std::find(replacedSharedMemories_.begin(),replacedSharedMemories_.end(), memories_[thisAS])) != memories_[thisAS] ){
-  
-            printf("DEBUG2\n");
+
             memoryList_.erase(
                 std::find(
                     memoryList_.begin(), memoryList_.end(), 
                     memories_[thisAS]));
 
-            printf("DEBUG3\n");
+
             sharedMemories_.erase(
                 std::find(
                     sharedMemories_.begin(), sharedMemories_.end(),
                     memories_[thisAS]));
 
-            printf("DEBUG4\n");
             replacedSharedMemories_.push_back(memories_[thisAS]);
-        }          
+               
 
         memories_[thisAS] = other.memory(i);
         
     }  
+}
+
+void
+MemorySystem::shareMemoryWith(MemorySystem& other, const string& asname){
+    std::size_t i;
+    
+    for ( i = 0; i < other.memoryCount(); ++i) {
+        const AddressSpace& as = other.addressSpace(i);
+        if (as.name() == asname) break;
+    }
+    
+    Machine::AddressSpaceNavigator nav = machine_->addressSpaceNavigator();
+    AddressSpace* thisAS = nav.item(asname);
+    /// remove the replaced memory as it should not be controlled
+    /// by this MemorySystem anymore
+    
+
+    memoryList_.erase(
+        std::find(
+            memoryList_.begin(), memoryList_.end(), 
+            memories_[thisAS]));
+
+
+    sharedMemories_.erase(
+        std::find(
+            sharedMemories_.begin(), sharedMemories_.end(),
+            memories_[thisAS]));
+
+    replacedSharedMemories_.push_back(memories_[thisAS]);
+           
+
+    memories_[thisAS] = other.memory(i);
+
 }
 
 

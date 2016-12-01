@@ -57,6 +57,8 @@ Memory::Memory(Word start, Word end, Word MAUSize) :
         start_(start), end_(end), MAUSize_(MAUSize),
         writeRequests_(new RequestQueue()) {
 
+    disableLittleEndian();
+    
     const std::size_t maxMAUSize =
             static_cast<int>(sizeof(MinimumAddressableUnit) * BYTE_BITWIDTH);
 
