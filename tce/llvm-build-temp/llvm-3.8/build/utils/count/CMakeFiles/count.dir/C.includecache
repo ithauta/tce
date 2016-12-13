@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/utils/count/count.c
+stdlib.h
+-
+stdio.h
+-
+

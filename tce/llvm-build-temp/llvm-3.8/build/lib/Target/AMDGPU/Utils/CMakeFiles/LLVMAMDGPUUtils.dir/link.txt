@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../libLLVMAMDGPUUtils.a  CMakeFiles/LLVMAMDGPUUtils.dir/AMDGPUBaseInfo.cpp.o
+/usr/bin/ranlib ../../../libLLVMAMDGPUUtils.a

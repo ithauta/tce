@@ -1,0 +1,2374 @@
+The system is: Linux - 4.4.0-51-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: -O3
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: -O3
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_477ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_477ec.dir/build.make CMakeFiles/cmTC_477ec.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_477ec.dir/testCCompiler.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_477ec.dir/testCCompiler.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_477ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_477ec.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_477ec.dir/testCCompiler.c.o  -o cmTC_477ec -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d598d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d598d.dir/build.make CMakeFiles/cmTC_d598d.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_d598d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d598d.dir/link.txt --verbose=1
+/usr/bin/cc  -O3     -v CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o  -o cmTC_d598d -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.4' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O3' '-v' '-o' 'cmTC_d598d' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cccv5GaF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d598d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d598d/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d598d.dir/build.make CMakeFiles/cmTC_d598d.dir/build]
+  ignore line: [make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -O3     -o CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d598d]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d598d.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -O3     -v CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o  -o cmTC_d598d -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.4' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O3' '-v' '-o' 'cmTC_d598d' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cccv5GaF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d598d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cccv5GaF.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d598d] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTC_d598d.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2fdfe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2fdfe.dir/build.make CMakeFiles/cmTC_2fdfe.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fdfe.dir/feature_tests.c.o
+/usr/bin/cc    -O3     -std=c11 -o CMakeFiles/cmTC_2fdfe.dir/feature_tests.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2fdfe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fdfe.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_2fdfe.dir/feature_tests.c.o  -o cmTC_2fdfe -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bf838/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf838.dir/build.make CMakeFiles/cmTC_bf838.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf838.dir/feature_tests.c.o
+/usr/bin/cc    -O3     -std=c99 -o CMakeFiles/cmTC_bf838.dir/feature_tests.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bf838
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf838.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_bf838.dir/feature_tests.c.o  -o cmTC_bf838 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cbd74/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbd74.dir/build.make CMakeFiles/cmTC_cbd74.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbd74.dir/feature_tests.c.o
+/usr/bin/cc    -O3     -std=c90 -o CMakeFiles/cmTC_cbd74.dir/feature_tests.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cbd74
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbd74.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_cbd74.dir/feature_tests.c.o  -o cmTC_cbd74 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_38b42/fast"
+/usr/bin/make -f CMakeFiles/cmTC_38b42.dir/build.make CMakeFiles/cmTC_38b42.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_38b42.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -O3     -o CMakeFiles/cmTC_38b42.dir/testCXXCompiler.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_38b42
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38b42.dir/link.txt --verbose=1
+/usr/bin/c++   -O3      CMakeFiles/cmTC_38b42.dir/testCXXCompiler.cxx.o  -o cmTC_38b42 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cd0f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd0f0.dir/build.make CMakeFiles/cmTC_cd0f0.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -O3     -o CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_cd0f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd0f0.dir/link.txt --verbose=1
+/usr/bin/c++   -O3     -v CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cd0f0 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.4' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O3' '-v' '-o' 'cmTC_cd0f0' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7bVn3R.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_cd0f0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_cd0f0/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_cd0f0.dir/build.make CMakeFiles/cmTC_cd0f0.dir/build]
+  ignore line: [make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -O3     -o CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_cd0f0]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd0f0.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++   -O3     -v CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cd0f0 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.4' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O3' '-v' '-o' 'cmTC_cd0f0' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7bVn3R.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_cd0f0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc7bVn3R.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cd0f0] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTC_cd0f0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b4344/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b4344.dir/build.make CMakeFiles/cmTC_b4344.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b4344.dir/feature_tests.cxx.o
+/usr/bin/c++     -O3     -std=c++14 -o CMakeFiles/cmTC_b4344.dir/feature_tests.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b4344
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4344.dir/link.txt --verbose=1
+/usr/bin/c++   -O3      CMakeFiles/cmTC_b4344.dir/feature_tests.cxx.o  -o cmTC_b4344 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_063db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_063db.dir/build.make CMakeFiles/cmTC_063db.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_063db.dir/feature_tests.cxx.o
+/usr/bin/c++     -O3     -std=c++11 -o CMakeFiles/cmTC_063db.dir/feature_tests.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_063db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_063db.dir/link.txt --verbose=1
+/usr/bin/c++   -O3      CMakeFiles/cmTC_063db.dir/feature_tests.cxx.o  -o cmTC_063db -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c2bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c2bc.dir/build.make CMakeFiles/cmTC_3c2bc.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3c2bc.dir/feature_tests.cxx.o
+/usr/bin/c++     -O3     -std=c++98 -o CMakeFiles/cmTC_3c2bc.dir/feature_tests.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3c2bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c2bc.dir/link.txt --verbose=1
+/usr/bin/c++   -O3      CMakeFiles/cmTC_3c2bc.dir/feature_tests.cxx.o  -o cmTC_3c2bc -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b5ef3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5ef3.dir/build.make CMakeFiles/cmTC_b5ef3.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5ef3.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_b5ef3.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b5ef3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5ef3.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_b5ef3.dir/CheckIncludeFile.c.o  -o cmTC_b5ef3 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0b327/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0b327.dir/build.make CMakeFiles/cmTC_0b327.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b327.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_0b327.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0b327
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b327.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_0b327.dir/CheckIncludeFile.c.o  -o cmTC_0b327 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63873/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63873.dir/build.make CMakeFiles/cmTC_63873.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63873.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_63873.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_63873
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63873.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_63873.dir/CheckIncludeFile.c.o  -o cmTC_63873 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file execinfo.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fa6f9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa6f9.dir/build.make CMakeFiles/cmTC_fa6f9.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa6f9.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_fa6f9.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fa6f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa6f9.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_fa6f9.dir/CheckIncludeFile.c.o  -o cmTC_fa6f9 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6fa0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fa0a.dir/build.make CMakeFiles/cmTC_6fa0a.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6fa0a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_6fa0a.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6fa0a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fa0a.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_6fa0a.dir/CheckIncludeFile.c.o  -o cmTC_6fa0a -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2285b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2285b.dir/build.make CMakeFiles/cmTC_2285b.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2285b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_2285b.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2285b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2285b.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_2285b.dir/CheckIncludeFile.c.o  -o cmTC_2285b -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20007/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20007.dir/build.make CMakeFiles/cmTC_20007.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20007.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_20007.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_20007
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20007.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_20007.dir/CheckIncludeFile.c.o  -o cmTC_20007 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file link.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95e46/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95e46.dir/build.make CMakeFiles/cmTC_95e46.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95e46.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_95e46.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_95e46
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95e46.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_95e46.dir/CheckIncludeFile.c.o  -o cmTC_95e46 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_588c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_588c9.dir/build.make CMakeFiles/cmTC_588c9.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_588c9.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_588c9.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_588c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_588c9.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_588c9.dir/CheckIncludeFile.c.o  -o cmTC_588c9 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b572/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4b572.dir/build.make CMakeFiles/cmTC_4b572.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b572.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_4b572.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4b572
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b572.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_4b572.dir/CheckIncludeFile.c.o  -o cmTC_4b572 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_da7a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_da7a2.dir/build.make CMakeFiles/cmTC_da7a2.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da7a2.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_da7a2.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_da7a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da7a2.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_da7a2.dir/CheckIncludeFile.c.o  -o cmTC_da7a2 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7b125/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7b125.dir/build.make CMakeFiles/cmTC_7b125.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b125.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_7b125.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7b125
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b125.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_7b125.dir/CheckIncludeFile.c.o  -o cmTC_7b125 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/dir.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c869/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c869.dir/build.make CMakeFiles/cmTC_3c869.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c869.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_3c869.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3c869
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c869.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_3c869.dir/CheckIncludeFile.c.o  -o cmTC_3c869 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e9ce7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e9ce7.dir/build.make CMakeFiles/cmTC_e9ce7.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9ce7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_e9ce7.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e9ce7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9ce7.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_e9ce7.dir/CheckIncludeFile.c.o  -o cmTC_e9ce7 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8ec1a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ec1a.dir/build.make CMakeFiles/cmTC_8ec1a.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ec1a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_8ec1a.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8ec1a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ec1a.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_8ec1a.dir/CheckIncludeFile.c.o  -o cmTC_8ec1a -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60c26/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60c26.dir/build.make CMakeFiles/cmTC_60c26.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60c26.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_60c26.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_60c26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c26.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_60c26.dir/CheckIncludeFile.c.o  -o cmTC_60c26 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eaeff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eaeff.dir/build.make CMakeFiles/cmTC_eaeff.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eaeff.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_eaeff.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_eaeff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eaeff.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_eaeff.dir/CheckIncludeFile.c.o  -o cmTC_eaeff -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b1511/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1511.dir/build.make CMakeFiles/cmTC_b1511.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1511.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_b1511.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b1511
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1511.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_b1511.dir/CheckIncludeFile.c.o  -o cmTC_b1511 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_684da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_684da.dir/build.make CMakeFiles/cmTC_684da.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_684da.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_684da.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_684da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_684da.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_684da.dir/CheckIncludeFile.c.o  -o cmTC_684da -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/uio.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5cde9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5cde9.dir/build.make CMakeFiles/cmTC_5cde9.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cde9.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_5cde9.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5cde9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cde9.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_5cde9.dir/CheckIncludeFile.c.o  -o cmTC_5cde9 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file termios.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aad50/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aad50.dir/build.make CMakeFiles/cmTC_aad50.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aad50.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_aad50.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_aad50
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aad50.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_aad50.dir/CheckIncludeFile.c.o  -o cmTC_aad50 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a2b19/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a2b19.dir/build.make CMakeFiles/cmTC_a2b19.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2b19.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_a2b19.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a2b19
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2b19.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_a2b19.dir/CheckIncludeFile.c.o  -o cmTC_a2b19 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file utime.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2844a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2844a.dir/build.make CMakeFiles/cmTC_2844a.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2844a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_2844a.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2844a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2844a.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_2844a.dir/CheckIncludeFile.c.o  -o cmTC_2844a -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file zlib.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a0deb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0deb.dir/build.make CMakeFiles/cmTC_a0deb.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0deb.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_a0deb.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a0deb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0deb.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_a0deb.dir/CheckIncludeFile.c.o  -o cmTC_a0deb -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fenv.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_70b0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_70b0a.dir/build.make CMakeFiles/cmTC_70b0a.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70b0a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_70b0a.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_70b0a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70b0a.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_70b0a.dir/CheckIncludeFile.c.o  -o cmTC_70b0a -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the FE_ALL_EXCEPT exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_950f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_950f7.dir/build.make CMakeFiles/cmTC_950f7.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_950f7.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_950f7.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_950f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_950f7.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_950f7.dir/CheckSymbolExists.c.o  -o cmTC_950f7 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_ALL_EXCEPT
+  return ((int*)(&FE_ALL_EXCEPT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the FE_INEXACT exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_393e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_393e3.dir/build.make CMakeFiles/cmTC_393e3.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_393e3.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_393e3.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_393e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_393e3.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_393e3.dir/CheckSymbolExists.c.o  -o cmTC_393e3 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_INEXACT
+  return ((int*)(&FE_INEXACT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file histedit.h exists passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5cf78/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5cf78.dir/build.make CMakeFiles/cmTC_5cf78.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cf78.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_5cf78.dir/CheckIncludeFile.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5cf78
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cf78.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_5cf78.dir/CheckIncludeFile.c.o  -o cmTC_5cf78 -rdynamic 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test HAVE_CXXABI_H succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e0951/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e0951.dir/build.make CMakeFiles/cmTC_e0951.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e0951.dir/src.cxx.o
+/usr/bin/c++     -O3  -DHAVE_CXXABI_H   -o CMakeFiles/cmTC_e0951.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e0951
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0951.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DHAVE_CXXABI_H    CMakeFiles/cmTC_e0951.dir/src.cxx.o  -o cmTC_e0951 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <stddef.h>
+#include <cxxabi.h>
+int main() { return 0; }
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95364/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95364.dir/build.make CMakeFiles/cmTC_95364.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95364.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_95364.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_95364
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95364.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_95364.dir/CheckFunctionExists.c.o  -o cmTC_95364 -rdynamic -lpthread -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_getspecific exists in the pthread passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f407e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f407e.dir/build.make CMakeFiles/cmTC_f407e.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f407e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=pthread_getspecific   -o CMakeFiles/cmTC_f407e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f407e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f407e.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=pthread_getspecific    CMakeFiles/cmTC_f407e.dir/CheckFunctionExists.c.o  -o cmTC_f407e -rdynamic -lpthread -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_rwlock_init exists in the pthread passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_89e8e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89e8e.dir/build.make CMakeFiles/cmTC_89e8e.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89e8e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=pthread_rwlock_init   -o CMakeFiles/cmTC_89e8e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_89e8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89e8e.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=pthread_rwlock_init    CMakeFiles/cmTC_89e8e.dir/CheckFunctionExists.c.o  -o cmTC_89e8e -rdynamic -lpthread -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_mutex_lock exists in the pthread passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e3c1e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e3c1e.dir/build.make CMakeFiles/cmTC_e3c1e.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3c1e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=pthread_mutex_lock   -o CMakeFiles/cmTC_e3c1e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e3c1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3c1e.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=pthread_mutex_lock    CMakeFiles/cmTC_e3c1e.dir/CheckFunctionExists.c.o  -o cmTC_e3c1e -rdynamic -lpthread -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dlopen exists in the dl passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_164c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_164c3.dir/build.make CMakeFiles/cmTC_164c3.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_164c3.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_164c3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_164c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_164c3.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=dlopen    CMakeFiles/cmTC_164c3.dir/CheckFunctionExists.c.o  -o cmTC_164c3 -rdynamic -ldl -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2542d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2542d.dir/build.make CMakeFiles/cmTC_2542d.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2542d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_2542d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2542d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2542d.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTC_2542d.dir/CheckFunctionExists.c.o  -o cmTC_2542d -rdynamic -lrt -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function compress2 exists in the z passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_86c0e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_86c0e.dir/build.make CMakeFiles/cmTC_86c0e.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86c0e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=compress2   -o CMakeFiles/cmTC_86c0e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_86c0e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86c0e.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=compress2    CMakeFiles/cmTC_86c0e.dir/CheckFunctionExists.c.o  -o cmTC_86c0e -rdynamic -lz -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function el_init exists in the edit passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63434/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63434.dir/build.make CMakeFiles/cmTC_63434.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63434.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=el_init   -o CMakeFiles/cmTC_63434.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_63434
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63434.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=el_init    CMakeFiles/cmTC_63434.dir/CheckFunctionExists.c.o  -o cmTC_63434 -rdynamic -ledit -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function setupterm exists in the tinfo passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b3a1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b3a1f.dir/build.make CMakeFiles/cmTC_b3a1f.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3a1f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -O3  -DCHECK_FUNCTION_EXISTS=setupterm   -o CMakeFiles/cmTC_b3a1f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b3a1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3a1f.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DCHECK_FUNCTION_EXISTS=setupterm    CMakeFiles/cmTC_b3a1f.dir/CheckFunctionExists.c.o  -o cmTC_b3a1f -rdynamic -ltinfo -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the backtrace exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e4ee0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4ee0.dir/build.make CMakeFiles/cmTC_e4ee0.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4ee0.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_e4ee0.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e4ee0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4ee0.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_e4ee0.dir/CheckSymbolExists.c.o  -o cmTC_e4ee0 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <execinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef backtrace
+  return ((int*)(&backtrace))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getpagesize exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c346a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c346a.dir/build.make CMakeFiles/cmTC_c346a.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c346a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_c346a.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c346a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c346a.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_c346a.dir/CheckSymbolExists.c.o  -o cmTC_c346a -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpagesize
+  return ((int*)(&getpagesize))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getrusage exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_798da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_798da.dir/build.make CMakeFiles/cmTC_798da.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_798da.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_798da.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_798da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_798da.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_798da.dir/CheckSymbolExists.c.o  -o cmTC_798da -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the setrlimit exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_67faa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_67faa.dir/build.make CMakeFiles/cmTC_67faa.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67faa.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_67faa.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_67faa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67faa.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_67faa.dir/CheckSymbolExists.c.o  -o cmTC_67faa -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setrlimit
+  return ((int*)(&setrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the isatty exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76161/fast"
+/usr/bin/make -f CMakeFiles/cmTC_76161.dir/build.make CMakeFiles/cmTC_76161.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76161.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_76161.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_76161
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76161.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_76161.dir/CheckSymbolExists.c.o  -o cmTC_76161 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isatty
+  return ((int*)(&isatty))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the futimens exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5bb25/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5bb25.dir/build.make CMakeFiles/cmTC_5bb25.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bb25.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_5bb25.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5bb25
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bb25.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_5bb25.dir/CheckSymbolExists.c.o  -o cmTC_5bb25 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/stat.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef futimens
+  return ((int*)(&futimens))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the futimes exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ac62a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac62a.dir/build.make CMakeFiles/cmTC_ac62a.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac62a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_ac62a.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ac62a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac62a.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_ac62a.dir/CheckSymbolExists.c.o  -o cmTC_ac62a -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef futimes
+  return ((int*)(&futimes))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the writev exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5ea0d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5ea0d.dir/build.make CMakeFiles/cmTC_5ea0d.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ea0d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_5ea0d.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5ea0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ea0d.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_5ea0d.dir/CheckSymbolExists.c.o  -o cmTC_5ea0d -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/uio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef writev
+  return ((int*)(&writev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the mallinfo exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eeaaf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eeaaf.dir/build.make CMakeFiles/cmTC_eeaaf.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eeaaf.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_eeaaf.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_eeaaf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eeaaf.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_eeaaf.dir/CheckSymbolExists.c.o  -o cmTC_eeaaf -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallinfo
+  return ((int*)(&mallinfo))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the mkdtemp exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_23e91/fast"
+/usr/bin/make -f CMakeFiles/cmTC_23e91.dir/build.make CMakeFiles/cmTC_23e91.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23e91.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_23e91.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_23e91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23e91.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_23e91.dir/CheckSymbolExists.c.o  -o cmTC_23e91 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mkdtemp
+  return ((int*)(&mkdtemp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the mkstemp exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ea57a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ea57a.dir/build.make CMakeFiles/cmTC_ea57a.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea57a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_ea57a.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ea57a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea57a.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_ea57a.dir/CheckSymbolExists.c.o  -o cmTC_ea57a -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mkstemp
+  return ((int*)(&mkstemp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the mktemp exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_574eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_574eb.dir/build.make CMakeFiles/cmTC_574eb.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_574eb.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_574eb.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_574eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_574eb.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_574eb.dir/CheckSymbolExists.c.o  -o cmTC_574eb -rdynamic -lm 
+CMakeFiles/cmTC_574eb.dir/CheckSymbolExists.c.o: Funktiossa ”main”:
+CheckSymbolExists.c:(.text.startup+0x6): varoitus: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mktemp
+  return ((int*)(&mktemp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the closedir exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9fbc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9fbc.dir/build.make CMakeFiles/cmTC_a9fbc.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9fbc.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_a9fbc.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a9fbc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9fbc.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_a9fbc.dir/CheckSymbolExists.c.o  -o cmTC_a9fbc -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <dirent.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closedir
+  return ((int*)(&closedir))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the opendir exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_67b31/fast"
+/usr/bin/make -f CMakeFiles/cmTC_67b31.dir/build.make CMakeFiles/cmTC_67b31.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67b31.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_67b31.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_67b31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67b31.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_67b31.dir/CheckSymbolExists.c.o  -o cmTC_67b31 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <dirent.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef opendir
+  return ((int*)(&opendir))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the readdir exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_71bd0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_71bd0.dir/build.make CMakeFiles/cmTC_71bd0.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71bd0.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_71bd0.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_71bd0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71bd0.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_71bd0.dir/CheckSymbolExists.c.o  -o cmTC_71bd0 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <dirent.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef readdir
+  return ((int*)(&readdir))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getcwd exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b2ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b2ae.dir/build.make CMakeFiles/cmTC_3b2ae.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b2ae.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_3b2ae.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3b2ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b2ae.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_3b2ae.dir/CheckSymbolExists.c.o  -o cmTC_3b2ae -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getcwd
+  return ((int*)(&getcwd))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the gettimeofday exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b78ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b78ed.dir/build.make CMakeFiles/cmTC_b78ed.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b78ed.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_b78ed.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b78ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b78ed.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_b78ed.dir/CheckSymbolExists.c.o  -o cmTC_b78ed -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gettimeofday
+  return ((int*)(&gettimeofday))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getrlimit exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_daf88/fast"
+/usr/bin/make -f CMakeFiles/cmTC_daf88.dir/build.make CMakeFiles/cmTC_daf88.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_daf88.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_daf88.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_daf88
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daf88.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_daf88.dir/CheckSymbolExists.c.o  -o cmTC_daf88 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrlimit
+  return ((int*)(&getrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the posix_spawn exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_261f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_261f8.dir/build.make CMakeFiles/cmTC_261f8.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_261f8.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_261f8.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_261f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_261f8.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_261f8.dir/CheckSymbolExists.c.o  -o cmTC_261f8 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_spawn
+  return ((int*)(&posix_spawn))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pread exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57b75/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57b75.dir/build.make CMakeFiles/cmTC_57b75.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57b75.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_57b75.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_57b75
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57b75.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_57b75.dir/CheckSymbolExists.c.o  -o cmTC_57b75 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pread
+  return ((int*)(&pread))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the realpath exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3eac8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3eac8.dir/build.make CMakeFiles/cmTC_3eac8.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3eac8.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_3eac8.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3eac8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3eac8.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_3eac8.dir/CheckSymbolExists.c.o  -o cmTC_3eac8 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realpath
+  return ((int*)(&realpath))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the sbrk exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_db11e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_db11e.dir/build.make CMakeFiles/cmTC_db11e.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db11e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_db11e.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_db11e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db11e.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_db11e.dir/CheckSymbolExists.c.o  -o cmTC_db11e -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sbrk
+  return ((int*)(&sbrk))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the srand48 exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_762ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_762ec.dir/build.make CMakeFiles/cmTC_762ec.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_762ec.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_762ec.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_762ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_762ec.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_762ec.dir/CheckSymbolExists.c.o  -o cmTC_762ec -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef srand48
+  return ((int*)(&srand48))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the lrand48 exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1cc37/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1cc37.dir/build.make CMakeFiles/cmTC_1cc37.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1cc37.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_1cc37.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1cc37
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cc37.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_1cc37.dir/CheckSymbolExists.c.o  -o cmTC_1cc37 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef lrand48
+  return ((int*)(&lrand48))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the drand48 exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_85dd4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_85dd4.dir/build.make CMakeFiles/cmTC_85dd4.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85dd4.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_85dd4.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_85dd4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85dd4.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_85dd4.dir/CheckSymbolExists.c.o  -o cmTC_85dd4 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef drand48
+  return ((int*)(&drand48))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strtoll exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e43c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e43c2.dir/build.make CMakeFiles/cmTC_e43c2.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e43c2.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_e43c2.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e43c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e43c2.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_e43c2.dir/CheckSymbolExists.c.o  -o cmTC_e43c2 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strtoq exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_65dd0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65dd0.dir/build.make CMakeFiles/cmTC_65dd0.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65dd0.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_65dd0.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_65dd0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65dd0.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_65dd0.dir/CheckSymbolExists.c.o  -o cmTC_65dd0 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoq
+  return ((int*)(&strtoq))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1ccdf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ccdf.dir/build.make CMakeFiles/cmTC_1ccdf.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ccdf.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_1ccdf.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1ccdf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ccdf.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_1ccdf.dir/CheckSymbolExists.c.o  -o cmTC_1ccdf -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror_r exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f9694/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f9694.dir/build.make CMakeFiles/cmTC_f9694.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9694.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_f9694.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f9694
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9694.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_f9694.dir/CheckSymbolExists.c.o  -o cmTC_f9694 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_r
+  return ((int*)(&strerror_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the setenv exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84529/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84529.dir/build.make CMakeFiles/cmTC_84529.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84529.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_84529.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_84529
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84529.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_84529.dir/CheckSymbolExists.c.o  -o cmTC_84529 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setenv
+  return ((int*)(&setenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the dlerror exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8a5e8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8a5e8.dir/build.make CMakeFiles/cmTC_8a5e8.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8a5e8.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_8a5e8.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8a5e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a5e8.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_8a5e8.dir/CheckSymbolExists.c.o  -o cmTC_8a5e8 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dlerror
+  return ((int*)(&dlerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the dlopen exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ad206/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad206.dir/build.make CMakeFiles/cmTC_ad206.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad206.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_ad206.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ad206
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad206.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_ad206.dir/CheckSymbolExists.c.o  -o cmTC_ad206 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dlopen
+  return ((int*)(&dlopen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the __GLIBC__ exist passed with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dfcde/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dfcde.dir/build.make CMakeFiles/cmTC_dfcde.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dfcde.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3     -o CMakeFiles/cmTC_dfcde.dir/CheckSymbolExists.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dfcde
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfcde.dir/link.txt --verbose=1
+/usr/bin/cc  -O3      CMakeFiles/cmTC_dfcde.dir/CheckSymbolExists.c.o  -o cmTC_dfcde -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+File /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test HAVE_INT64_T succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd4bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd4bd.dir/build.make CMakeFiles/cmTC_bd4bd.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd4bd.dir/src.cxx.o
+/usr/bin/c++     -O3  -DHAVE_INT64_T   -o CMakeFiles/cmTC_bd4bd.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bd4bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd4bd.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DHAVE_INT64_T    CMakeFiles/cmTC_bd4bd.dir/src.cxx.o  -o cmTC_bd4bd -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include<sys/types.h>
+#include<inttypes.h>
+#include<stdint.h>
+ int64_t typeVar;
+    int main() {
+        return 0;
+    }
+    
+Performing C++ SOURCE FILE Test HAVE_UINT64_T succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1d796/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d796.dir/build.make CMakeFiles/cmTC_1d796.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d796.dir/src.cxx.o
+/usr/bin/c++     -O3  -DHAVE_UINT64_T   -o CMakeFiles/cmTC_1d796.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1d796
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d796.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DHAVE_UINT64_T    CMakeFiles/cmTC_1d796.dir/src.cxx.o  -o cmTC_1d796 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include<sys/types.h>
+#include<inttypes.h>
+#include<stdint.h>
+ uint64_t typeVar;
+    int main() {
+        return 0;
+    }
+    
+Performing C++ SOURCE FILE Test HAVE_U_INT64_T succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20821/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20821.dir/build.make CMakeFiles/cmTC_20821.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_20821.dir/src.cxx.o
+/usr/bin/c++     -O3  -DHAVE_U_INT64_T   -o CMakeFiles/cmTC_20821.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_20821
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20821.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DHAVE_U_INT64_T    CMakeFiles/cmTC_20821.dir/src.cxx.o  -o cmTC_20821 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include<sys/types.h>
+#include<inttypes.h>
+#include<stdint.h>
+ u_int64_t typeVar;
+    int main() {
+        return 0;
+    }
+    
+Performing C++ SOURCE FILE Test HAVE_CXX_ATOMICS_WITHOUT_LIB succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62c2d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62c2d.dir/build.make CMakeFiles/cmTC_62c2d.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_62c2d.dir/src.cxx.o
+/usr/bin/c++     -O3  -DHAVE_CXX_ATOMICS_WITHOUT_LIB -std=c++11   -o CMakeFiles/cmTC_62c2d.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_62c2d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62c2d.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DHAVE_CXX_ATOMICS_WITHOUT_LIB -std=c++11    CMakeFiles/cmTC_62c2d.dir/src.cxx.o  -o cmTC_62c2d -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <atomic>
+std::atomic<int> x;
+int main() {
+  return x;
+}
+
+Performing C++ SOURCE FILE Test LLVM_HAS_ATOMICS succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d9f85/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d9f85.dir/build.make CMakeFiles/cmTC_d9f85.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d9f85.dir/src.cxx.o
+/usr/bin/c++     -O3  -DLLVM_HAS_ATOMICS   -o CMakeFiles/cmTC_d9f85.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d9f85
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9f85.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DLLVM_HAS_ATOMICS    CMakeFiles/cmTC_d9f85.dir/src.cxx.o  -o cmTC_d9f85 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#ifdef _MSC_VER
+#include <Intrin.h> /* Workaround for PR19898. */
+#include <windows.h>
+#endif
+int main() {
+#ifdef _MSC_VER
+        volatile LONG val = 1;
+        MemoryBarrier();
+        InterlockedCompareExchange(&val, 0, 1);
+        InterlockedIncrement(&val);
+        InterlockedDecrement(&val);
+#else
+        volatile unsigned long val = 1;
+        __sync_synchronize();
+        __sync_val_compare_and_swap(&val, 1, 0);
+        __sync_add_and_fetch(&val, 1);
+        __sync_sub_and_fetch(&val, 1);
+#endif
+        return 0;
+      }
+
+Performing C++ SOURCE FILE Test SUPPORTS_NO_VARIADIC_MACROS_FLAG succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_850ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_850ef.dir/build.make CMakeFiles/cmTC_850ef.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_850ef.dir/src.cxx.o
+/usr/bin/c++     -O3  -DSUPPORTS_NO_VARIADIC_MACROS_FLAG   -Wno-variadic-macros -o CMakeFiles/cmTC_850ef.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_850ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_850ef.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DSUPPORTS_NO_VARIADIC_MACROS_FLAG    CMakeFiles/cmTC_850ef.dir/src.cxx.o  -o cmTC_850ef -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_MAYBE_UNINITIALIZED succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a1b25/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1b25.dir/build.make CMakeFiles/cmTC_a1b25.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1b25.dir/src.cxx.o
+/usr/bin/c++     -O3  -DHAS_MAYBE_UNINITIALIZED   -Wmaybe-uninitialized -o CMakeFiles/cmTC_a1b25.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a1b25
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1b25.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DHAS_MAYBE_UNINITIALIZED    CMakeFiles/cmTC_a1b25.dir/src.cxx.o  -o cmTC_a1b25 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_54a2d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_54a2d.dir/build.make CMakeFiles/cmTC_54a2d.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54a2d.dir/src.c.o
+/usr/bin/cc    -O3  -DC_SUPPORTS_FPIC   -Werror -fPIC -o CMakeFiles/cmTC_54a2d.dir/src.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_54a2d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54a2d.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -DC_SUPPORTS_FPIC    CMakeFiles/cmTC_54a2d.dir/src.c.o  -o cmTC_54a2d -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c956d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c956d.dir/build.make CMakeFiles/cmTC_c956d.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c956d.dir/src.cxx.o
+/usr/bin/c++     -O3  -DCXX_SUPPORTS_FPIC   -Werror -fPIC -o CMakeFiles/cmTC_c956d.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c956d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c956d.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -DCXX_SUPPORTS_FPIC    CMakeFiles/cmTC_c956d.dir/src.cxx.o  -o cmTC_c956d -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb389/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb389.dir/build.make CMakeFiles/cmTC_eb389.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb389.dir/src.cxx.o
+/usr/bin/c++     -O3  -fPIC -DSUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_eb389.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_eb389
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb389.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -fPIC -DSUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG    CMakeFiles/cmTC_eb389.dir/src.cxx.o  -o cmTC_eb389 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4c416/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c416.dir/build.make CMakeFiles/cmTC_4c416.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4c416.dir/src.cxx.o
+/usr/bin/c++     -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -DCXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG   -Wmissing-field-initializers -o CMakeFiles/cmTC_4c416.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4c416
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c416.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -DCXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG    CMakeFiles/cmTC_4c416.dir/src.cxx.o  -o cmTC_4c416 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fe904/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe904.dir/build.make CMakeFiles/cmTC_fe904.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fe904.dir/src.cxx.o
+/usr/bin/c++     -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -DCXX_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG   -Werror -Wdelete-non-virtual-dtor -o CMakeFiles/cmTC_fe904.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fe904
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe904.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -DCXX_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG    CMakeFiles/cmTC_fe904.dir/src.cxx.o  -o cmTC_fe904 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9dc59/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9dc59.dir/build.make CMakeFiles/cmTC_9dc59.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9dc59.dir/src.cxx.o
+/usr/bin/c++     -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -DCXX_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_9dc59.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9dc59
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dc59.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -DCXX_SUPPORTS_CXX11    CMakeFiles/cmTC_9dc59.dir/src.cxx.o  -o cmTC_9dc59 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FNO_FUNCTION_SECTIONS succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_882e1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_882e1.dir/build.make CMakeFiles/cmTC_882e1.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_882e1.dir/src.c.o
+/usr/bin/cc    -O3  -fPIC -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -DC_SUPPORTS_FNO_FUNCTION_SECTIONS   -Werror -fno-function-sections -o CMakeFiles/cmTC_882e1.dir/src.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_882e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_882e1.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -fPIC -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -DC_SUPPORTS_FNO_FUNCTION_SECTIONS    CMakeFiles/cmTC_882e1.dir/src.c.o  -o cmTC_882e1 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FFUNCTION_SECTIONS succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7bd26/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7bd26.dir/build.make CMakeFiles/cmTC_7bd26.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7bd26.dir/src.c.o
+/usr/bin/cc    -O3  -fPIC -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -DC_SUPPORTS_FFUNCTION_SECTIONS   -Werror -ffunction-sections -o CMakeFiles/cmTC_7bd26.dir/src.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7bd26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bd26.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -fPIC -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -DC_SUPPORTS_FFUNCTION_SECTIONS    CMakeFiles/cmTC_7bd26.dir/src.c.o  -o cmTC_7bd26 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_FFUNCTION_SECTIONS succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bbae4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bbae4.dir/build.make CMakeFiles/cmTC_bbae4.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bbae4.dir/src.cxx.o
+/usr/bin/c++     -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -std=c++11 -DCXX_SUPPORTS_FFUNCTION_SECTIONS   -Werror -ffunction-sections -o CMakeFiles/cmTC_bbae4.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bbae4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbae4.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -std=c++11 -DCXX_SUPPORTS_FFUNCTION_SECTIONS    CMakeFiles/cmTC_bbae4.dir/src.cxx.o  -o cmTC_bbae4 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FDATA_SECTIONS succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e7aef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7aef.dir/build.make CMakeFiles/cmTC_e7aef.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7aef.dir/src.c.o
+/usr/bin/cc    -O3  -fPIC -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -DC_SUPPORTS_FDATA_SECTIONS   -Werror -fdata-sections -o CMakeFiles/cmTC_e7aef.dir/src.c.o   -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e7aef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7aef.dir/link.txt --verbose=1
+/usr/bin/cc  -O3  -fPIC -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -DC_SUPPORTS_FDATA_SECTIONS    CMakeFiles/cmTC_e7aef.dir/src.c.o  -o cmTC_e7aef -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_FDATA_SECTIONS succeeded with the following output:
+Change Dir: /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b5332/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5332.dir/build.make CMakeFiles/cmTC_b5332.dir/build
+make[1]: Entering directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b5332.dir/src.cxx.o
+/usr/bin/c++     -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -std=c++11 -ffunction-sections -DCXX_SUPPORTS_FDATA_SECTIONS   -Werror -fdata-sections -o CMakeFiles/cmTC_b5332.dir/src.cxx.o -c /home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b5332
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5332.dir/link.txt --verbose=1
+/usr/bin/c++   -O3  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -std=c++11 -ffunction-sections -DCXX_SUPPORTS_FDATA_SECTIONS    CMakeFiles/cmTC_b5332.dir/src.cxx.o  -o cmTC_b5332 -rdynamic -lm 
+make[1]: Leaving directory '/home/ithauta/Dropbox/Work/github/tce/tce/llvm-build-temp/llvm-3.8/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

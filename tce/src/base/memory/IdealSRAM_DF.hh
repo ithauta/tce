@@ -62,6 +62,7 @@ public:
     virtual void fillWithZeros();
 
     virtual Memory::MAU * getStoragePointer();
+    virtual void setStoragePointer(char *p_storage);
     //virtual void setStorageAddress(Memory::MAU * storagePointer);
 
 

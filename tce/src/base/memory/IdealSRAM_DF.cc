@@ -42,6 +42,7 @@
 #include "Application.hh"
 #include <iostream>
 
+
 using std::string;
 
 
@@ -58,6 +59,9 @@ using std::string;
  */
 IdealSRAM_DF::IdealSRAM_DF(Word start, Word end, Word MAUSize) :
         Memory(start, end, MAUSize), start_(start), end_(end), MAUSize_(MAUSize) {
+
+
+
     std::cout << "start: " << start_ << std::endl;
     std::cout << "end: " << end_ << std::endl;
     data_ = new Memory::MAU [end_/4 - start_];
@@ -74,6 +78,8 @@ IdealSRAM_DF::~IdealSRAM_DF() {
     delete[] data_;
     data_ = NULL;
 }
+
+
 
 /**
  * Writes a single memory location.
@@ -151,6 +157,15 @@ Memory::MAU *
 IdealSRAM_DF::getStoragePointer(){
     return data_;
 }
+
+void 
+IdealSRAM_DF::setStoragePointer(char *p_storage){
+
+    delete[] data_;
+    data_ = (Memory::MAU *) p_storage;
+
+}
+
 
 //void
 //IdealSRAM_DF::setStorageAddress(Memory::MAU * storagePointer){

@@ -36,6 +36,8 @@
 #define TTA_MEMORY_MODEL_HH
 
 #include "BaseType.hh"
+#include <mutex>
+
 
 struct WriteRequest;
 struct RequestQueue;
@@ -92,6 +94,7 @@ public:
     virtual void read(Word address, DoubleWord& data);
 
     virtual Memory::MAU * getStoragePointer(){ return 0;}
+	virtual void setStoragePointer(char *p_storage);
     //virtual void setStorageAddress(Memory::MAU * storagePointer){;}
 
     virtual void enableLittleEndian(){ littleEndianByteOrder_ = true; addrShift_ = 2; }
@@ -134,6 +137,7 @@ private:
     bool littleEndianByteOrder_;
     int addrShift_;
 
+	std::mutex memMutex_;
 };
 
 /// Maximum number of MAUs in a single request supported by the interface.

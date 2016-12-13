@@ -32,6 +32,7 @@
 
 #include <cstddef>
 #include <ios>
+#include <mutex>
 
 #include <boost/format.hpp>
 #include "Memory.hh"
@@ -57,6 +58,9 @@ Memory::Memory(Word start, Word end, Word MAUSize) :
         start_(start), end_(end), MAUSize_(MAUSize),
         writeRequests_(new RequestQueue()) {
 
+
+	
+
     disableLittleEndian();
     
     const std::size_t maxMAUSize =
@@ -73,6 +77,9 @@ Memory::Memory(Word start, Word end, Word MAUSize) :
         mask_ = ~0 << MAUSize_;
         mask_ = ~mask_;
     }
+	
+
+
 }
 
 /**
@@ -81,6 +88,13 @@ Memory::Memory(Word start, Word end, Word MAUSize) :
 Memory::~Memory() {
     delete writeRequests_;
     writeRequests_ = NULL;
+}
+
+
+
+void
+Memory::setStoragePointer(char *p_storage){
+	    abortWithError("Must be implemented in the derived class.");	
 }
 
 /**
@@ -126,6 +140,8 @@ Memory::read(Word /*address*/) {
 void
 Memory::write(Word address, int count, UIntWord data) {
 
+	std::lock_guard<std::mutex> lock(memMutex_);
+	
     checkRange(address, count);
 
     Memory::MAU MAUData[MAX_ACCESS_SIZE];
@@ -340,7 +356,9 @@ Memory::write(Word address, DoubleWord data) {
  */
 void
 Memory::read(Word address, int size, UIntWord& data) {
-
+	
+	std::lock_guard<std::mutex> lock(memMutex_);
+	
     checkRange(address, size);
 
     if(littleEndianByteOrder_){
@@ -385,7 +403,6 @@ Memory::read(Word address, int size, UIntWord& data) {
     }
 
 
-
 }
 
 /**
@@ -398,6 +415,7 @@ Memory::read(Word address, int size, UIntWord& data) {
  */
 void
 Memory::fillWithZeros() {
+	std::lock_guard<std::mutex> lock(memMutex_);
     for (std::size_t addr = start_; addr <= end_; ++addr) {
         write(addr, MAU(0));
     }
@@ -410,6 +428,7 @@ Memory::fillWithZeros() {
  */
 void
 Memory::reset() {
+	std::lock_guard<std::mutex> lock(memMutex_);
     RequestQueue::iterator iter = writeRequests_->begin();
     while (iter != writeRequests_->end()) {
         delete[] (*iter)->data_;
@@ -481,7 +500,6 @@ Memory::unpack( const UIntWord& value, int size, Memory::MAUTable data) {
  */
 void
 Memory::advanceClock() {
-
     RequestQueue::iterator iter = writeRequests_->begin();
     while (iter != writeRequests_->end()) {
         WriteRequest* req = (*iter);
